@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col mt-5">
+      <!-- <ul class="list-group flex-sm-column flex-row">
+        <li class="list-group-item active">Genres Name</li>
+        <li class="list-group-item "><a (click="on")>Cras justo odio</a></li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul> -->
+      <table class="table table-bordred">
+        <thead>
+          <th>Genres Name</th>
+        </thead>
+        <tbody *ngFor="let data of genersList">
+          <td (click)="movieClick(data.id)">{{data.name}}</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
